@@ -43,6 +43,10 @@ export default function Component({ service }) {
     spoolData = spoolData.filter((spool) => widget.spoolIds.includes(spool.id));
   }
 
+  if (widget.location) {
+    spoolData = spoolData.filter((spool) => widget.location == spool.location);
+  }
+
   if (spoolData.length > 4) {
     spoolData = spoolData.slice(0, 4);
   }

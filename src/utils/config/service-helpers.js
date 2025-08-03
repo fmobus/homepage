@@ -407,6 +407,7 @@ export function cleanServiceGroups(groups) {
 
           // spoolman
           spoolIds,
+          location,
 
           // grafana
           alerts,
@@ -603,6 +604,7 @@ export function cleanServiceGroups(groups) {
         }
         if (type === "spoolman") {
           if (spoolIds !== undefined) widget.spoolIds = spoolIds;
+          if (location !== undefined) widget.location = location;
         }
         if (type === "jellystat") {
           if (days !== undefined) widget.days = parseInt(days, 10);
