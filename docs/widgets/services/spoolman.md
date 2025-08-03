@@ -12,4 +12,5 @@ widget:
   type: spoolman
   url: http://spoolman.host.or.ip
   spoolIds: [1, 2, 3, 4] # optional
+  location: AMS # optional
 ```
